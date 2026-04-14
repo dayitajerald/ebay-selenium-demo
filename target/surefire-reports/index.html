@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-eBay_Test_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-eBay_Test_Suite" title="ebay.EbayTest" class="method navigator-link" hash-for-method="testBuyItNow">testBuyItNow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-eBay_Test_Suite" title="ebay.EbayTest" class="method navigator-link" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-eBay_Test_Suite -->
@@ -155,24 +155,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testBuyItNow">
-                  </a> <!-- testBuyItNow -->
-                  <span class="method-name">testBuyItNow</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&quot;atcBtn_btn_1&quot;]/span (tried for 20 second(s) with 500 milliseconds interval)
+                  <a name="testAddToCart">
+                  </a> <!-- testAddToCart -->
+                  <span class="method-name">testAddToCart</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&quot;atcBtn_btn_1&quot;] (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at ebay.EbaySearchPage.clickBuyItNow(EbaySearchPage.java:107)
-	at ebay.EbayTest.testBuyItNow(EbayTest.java:103)
+	at ebay.EbaySearchPage.clickAddToCartButton(EbaySearchPage.java:107)
+	at ebay.EbayTest.testAddToCart(EbayTest.java:103)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;atcBtn_btn_1&quot;]/span&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;atcBtn_btn_1&quot;]&quot;}
   (Session info: chrome=147.0.7727.56)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91cfdd3c898130f7fd5f8999074ba520, findElement {using=xpath, value=//*[@id=&quot;atcBtn_btn_1&quot;]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /var/folders/m4/pfs_t86j641...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56752}, goog:processID: 96466, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56752/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91cfdd3c898130f7fd5f8999074ba520
+Command: [7a25c84596711a153a07800395ec8dfe, findElement {using=xpath, value=//*[@id=&quot;atcBtn_btn_1&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /var/folders/m4/pfs_t86j641...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62372}, goog:processID: 33682, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62372/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a25c84596711a153a07800395ec8dfe
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -286,23 +286,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testSortByPrice')
 data.setCell(0, 2, 'ebay.EbayTest')
-data.setCell(0, 3, 22545);
+data.setCell(0, 3, 22340);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testBuyItNow')
+data.setCell(1, 1, 'testAddToCart')
 data.setCell(1, 2, 'ebay.EbayTest')
-data.setCell(1, 3, 20109);
+data.setCell(1, 3, 20107);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testSearchProduct')
 data.setCell(2, 2, 'ebay.EbayTest')
-data.setCell(2, 3, 3146);
+data.setCell(2, 3, 3737);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testLaunchEbay')
 data.setCell(3, 2, 'ebay.EbayTest')
-data.setCell(3, 3, 1363);
+data.setCell(3, 3, 1233);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testOpenProduct')
 data.setCell(4, 2, 'ebay.EbayTest')
-data.setCell(4, 3, 1104);
+data.setCell(4, 3, 1103);
 window.suiteTableData['eBay_Test_Suite']= { tableData: data, tableDiv: 'times-div-eBay_Test_Suite'}
 return data;
 }
@@ -340,29 +340,29 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testLaunchEbay</span>
-                <span class="method-start">798 ms</span>
+                <span class="method-start">1314 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSearchProduct</span>
-                <span class="method-start">2162 ms</span>
+                <span class="method-start">2549 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSortByPrice</span>
-                <span class="method-start">5308 ms</span>
+                <span class="method-start">6287 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testOpenProduct</span>
-                <span class="method-start">27853 ms</span>
+                <span class="method-start">28627 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testBuyItNow</span>
-                <span class="method-start">28957 ms</span>
+                <span class="method-name">testAddToCart</span>
+                <span class="method-start">29730 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">49074 ms</span>
+                <span class="method-start">49842 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

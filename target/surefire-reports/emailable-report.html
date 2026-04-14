@@ -9,25 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">eBay Test Suite</th></tr>
-<tr><td><a href="#t0">eBay Selenium Tests</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">49,213</td><td></td><td></td></tr>
+<tr><td><a href="#t0">eBay Selenium Tests</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">49,984</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">eBay Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">eBay Selenium Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ebay.EbayTest</td><td><a href="#m0">testBuyItNow</a></td><td rowspan="1">1776109590535</td><td rowspan="1">20109</td></tr><tr><th colspan="4">eBay Selenium Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">ebay.EbayTest</td><td><a href="#m1">testLaunchEbay</a></td><td rowspan="1">1776109562376</td><td rowspan="1">1363</td></tr><tr class="passedeven"><td><a href="#m2">testOpenProduct</a></td><td rowspan="1">1776109589431</td><td rowspan="1">1104</td></tr><tr class="passedeven"><td><a href="#m3">testSearchProduct</a></td><td rowspan="1">1776109563740</td><td rowspan="1">3146</td></tr><tr class="passedeven"><td><a href="#m4">testSortByPrice</a></td><td rowspan="1">1776109566886</td><td rowspan="1">22545</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">eBay Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">eBay Selenium Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ebay.EbayTest</td><td><a href="#m0">testAddToCart</a></td><td rowspan="1">1776154420746</td><td rowspan="1">20107</td></tr><tr><th colspan="4">eBay Selenium Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">ebay.EbayTest</td><td><a href="#m1">testLaunchEbay</a></td><td rowspan="1">1776154392330</td><td rowspan="1">1233</td></tr><tr class="passedeven"><td><a href="#m2">testOpenProduct</a></td><td rowspan="1">1776154419643</td><td rowspan="1">1103</td></tr><tr class="passedeven"><td><a href="#m3">testSearchProduct</a></td><td rowspan="1">1776154393565</td><td rowspan="1">3737</td></tr><tr class="passedeven"><td><a href="#m4">testSortByPrice</a></td><td rowspan="1">1776154397303</td><td rowspan="1">22340</td></tr></tbody>
 </table>
-<h2>eBay Selenium Tests</h2><h3 id="m0">ebay.EbayTest#testBuyItNow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&quot;atcBtn_btn_1&quot;]/span (tried for 20 second(s) with 500 milliseconds interval)
+<h2>eBay Selenium Tests</h2><h3 id="m0">ebay.EbayTest#testAddToCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&quot;atcBtn_btn_1&quot;] (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at ebay.EbaySearchPage.clickBuyItNow(EbaySearchPage.java:107)
-	at ebay.EbayTest.testBuyItNow(EbayTest.java:103)
+	at ebay.EbaySearchPage.clickAddToCartButton(EbaySearchPage.java:107)
+	at ebay.EbayTest.testAddToCart(EbayTest.java:103)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;atcBtn_btn_1&quot;]/span&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;atcBtn_btn_1&quot;]&quot;}
   (Session info: chrome=147.0.7727.56)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91cfdd3c898130f7fd5f8999074ba520, findElement {using=xpath, value=//*[@id=&quot;atcBtn_btn_1&quot;]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /var/folders/m4/pfs_t86j641...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56752}, goog:processID: 96466, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56752/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91cfdd3c898130f7fd5f8999074ba520
+Command: [7a25c84596711a153a07800395ec8dfe, findElement {using=xpath, value=//*[@id=&quot;atcBtn_btn_1&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /var/folders/m4/pfs_t86j641...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62372}, goog:processID: 33682, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62372/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a25c84596711a153a07800395ec8dfe
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)

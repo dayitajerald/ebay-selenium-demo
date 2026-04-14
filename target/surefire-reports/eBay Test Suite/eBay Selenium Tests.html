@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 14 01:16:01 IST 2026</td>
+<td>Started on:</td><td>Tue Apr 14 13:43:11 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>49 seconds (49213 ms)</td>
+<tr><td>Total time:</td><td>49 seconds (49984 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ebay.EbayTest.testBuyItNow()'><b>testBuyItNow</b><br>Test class: ebay.EbayTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&quot;atcBtn_btn_1&quot;]/span (tried for 20 second(s) with 500 milliseconds interval)
+<td title='ebay.EbayTest.testAddToCart()'><b>testAddToCart</b><br>Test class: ebay.EbayTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&quot;atcBtn_btn_1&quot;] (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at ebay.EbaySearchPage.clickBuyItNow(EbaySearchPage.java:107)
-	at ebay.EbayTest.testBuyItNow(EbayTest.java:103)
+	at ebay.EbaySearchPage.clickAddToCartButton(EbaySearchPage.java:107)
+	at ebay.EbayTest.testAddToCart(EbayTest.java:103)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;atcBtn_btn_1&quot;]/span&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;atcBtn_btn_1&quot;]&quot;}
   (Session info: chrome=147.0.7727.56)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91cfdd3c898130f7fd5f8999074ba520, findElement {using=xpath, value=//*[@id=&quot;atcBtn_btn_1&quot;]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /var/folders/m4/pfs_t86j641...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56752}, goog:processID: 96466, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56752/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91cfdd3c898130f7fd5f8999074ba520
+Command: [7a25c84596711a153a07800395ec8dfe, findElement {using=xpath, value=//*[@id=&quot;atcBtn_btn_1&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /var/folders/m4/pfs_t86j641...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62372}, goog:processID: 33682, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62372/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a25c84596711a153a07800395ec8dfe
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -107,12 +107,12 @@ Session ID: 91cfdd3c898130f7fd5f8999074ba520
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	... 32 more
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1646234040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1646234040'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&quot;atcBtn_btn_1&quot;]/span (tried for 20 second(s) with 500 milliseconds interval)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace969014795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace969014795'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&quot;atcBtn_btn_1&quot;] (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at ebay.EbaySearchPage.clickBuyItNow(EbaySearchPage.java:107)
-	at ebay.EbayTest.testBuyItNow(EbayTest.java:103)
+	at ebay.EbaySearchPage.clickAddToCartButton(EbaySearchPage.java:107)
+	at ebay.EbayTest.testAddToCart(EbayTest.java:103)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -143,15 +143,15 @@ Session ID: 91cfdd3c898130f7fd5f8999074ba520
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;atcBtn_btn_1&quot;]/span&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;atcBtn_btn_1&quot;]&quot;}
   (Session info: chrome=147.0.7727.56)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.3.1&apos;, java.version: &apos;21.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [91cfdd3c898130f7fd5f8999074ba520, findElement {using=xpath, value=//*[@id=&quot;atcBtn_btn_1&quot;]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /var/folders/m4/pfs_t86j641...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56752}, goog:processID: 96466, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56752/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 91cfdd3c898130f7fd5f8999074ba520
+Command: [7a25c84596711a153a07800395ec8dfe, findElement {using=xpath, value=//*[@id=&quot;atcBtn_btn_1&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /var/folders/m4/pfs_t86j641...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62372}, goog:processID: 33682, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62372/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a25c84596711a153a07800395ec8dfe
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -183,14 +183,14 @@ Session ID: 91cfdd3c898130f7fd5f8999074ba520
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='ebay.EbayTest.testOpenProduct()'><b>testOpenProduct</b><br>Test class: ebay.EbayTest</td>
+<td></td>
+<td>1</td>
+<td>ebay.EbayTest@13e39c73</td></tr>
+<tr>
 <td title='ebay.EbayTest.testSearchProduct()'><b>testSearchProduct</b><br>Test class: ebay.EbayTest</td>
 <td></td>
 <td>3</td>
-<td>ebay.EbayTest@13e39c73</td></tr>
-<tr>
-<td title='ebay.EbayTest.testSortByPrice()'><b>testSortByPrice</b><br>Test class: ebay.EbayTest</td>
-<td></td>
-<td>22</td>
 <td>ebay.EbayTest@13e39c73</td></tr>
 <tr>
 <td title='ebay.EbayTest.testLaunchEbay()'><b>testLaunchEbay</b><br>Test class: ebay.EbayTest</td>
@@ -198,9 +198,9 @@ Session ID: 91cfdd3c898130f7fd5f8999074ba520
 <td>1</td>
 <td>ebay.EbayTest@13e39c73</td></tr>
 <tr>
-<td title='ebay.EbayTest.testOpenProduct()'><b>testOpenProduct</b><br>Test class: ebay.EbayTest</td>
+<td title='ebay.EbayTest.testSortByPrice()'><b>testSortByPrice</b><br>Test class: ebay.EbayTest</td>
 <td></td>
-<td>1</td>
+<td>22</td>
 <td>ebay.EbayTest@13e39c73</td></tr>
 </table><p>
 </body>
