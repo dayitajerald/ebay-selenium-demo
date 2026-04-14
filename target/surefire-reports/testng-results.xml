@@ -1,107 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-14T13:43:11 IST" name="eBay Test Suite" finished-at="2026-04-14T13:44:00 IST" duration-ms="49984">
+  <suite started-at="2026-04-14T14:35:17 IST" name="eBay Test Suite" finished-at="2026-04-14T14:36:03 IST" duration-ms="45369">
     <groups>
     </groups>
-    <test started-at="2026-04-14T13:43:11 IST" name="eBay Selenium Tests" finished-at="2026-04-14T13:44:00 IST" duration-ms="49984">
+    <test started-at="2026-04-14T14:35:17 IST" name="eBay Selenium Tests" finished-at="2026-04-14T14:36:03 IST" duration-ms="45369">
       <class name="ebay.EbayTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ebay.EbayTest@13e39c73]" started-at="2026-04-14T13:43:11 IST" name="setUp" finished-at="2026-04-14T13:43:12 IST" duration-ms="1312" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ebay.EbayTest@64cd705f]" started-at="2026-04-14T14:35:17 IST" name="setUp" finished-at="2026-04-14T14:35:18 IST" duration-ms="955" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLaunchEbay()[pri:1, instance:ebay.EbayTest@13e39c73]" started-at="2026-04-14T13:43:12 IST" name="testLaunchEbay" finished-at="2026-04-14T13:43:13 IST" duration-ms="1233" status="PASS">
+        <test-method signature="testLaunchEbay()[pri:1, instance:ebay.EbayTest@64cd705f]" started-at="2026-04-14T14:35:18 IST" name="testLaunchEbay" finished-at="2026-04-14T14:35:22 IST" duration-ms="3674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLaunchEbay -->
-        <test-method signature="testSearchProduct()[pri:2, instance:ebay.EbayTest@13e39c73]" started-at="2026-04-14T13:43:13 IST" name="testSearchProduct" finished-at="2026-04-14T13:43:17 IST" duration-ms="3737" status="PASS">
+        <test-method signature="testSearchProduct()[pri:2, instance:ebay.EbayTest@64cd705f]" started-at="2026-04-14T14:35:22 IST" name="testSearchProduct" finished-at="2026-04-14T14:35:26 IST" duration-ms="4279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchProduct -->
-        <test-method signature="testSortByPrice()[pri:3, instance:ebay.EbayTest@13e39c73]" started-at="2026-04-14T13:43:17 IST" name="testSortByPrice" finished-at="2026-04-14T13:43:39 IST" duration-ms="22340" status="PASS">
+        <test-method signature="testSortByPrice()[pri:3, instance:ebay.EbayTest@64cd705f]" started-at="2026-04-14T14:35:26 IST" name="testSortByPrice" finished-at="2026-04-14T14:35:49 IST" duration-ms="22761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSortByPrice -->
-        <test-method signature="testOpenProduct()[pri:4, instance:ebay.EbayTest@13e39c73]" started-at="2026-04-14T13:43:39 IST" name="testOpenProduct" finished-at="2026-04-14T13:43:40 IST" duration-ms="1103" status="PASS">
+        <test-method signature="testOpenProduct()[pri:4, instance:ebay.EbayTest@64cd705f]" started-at="2026-04-14T14:35:49 IST" name="testOpenProduct" finished-at="2026-04-14T14:35:53 IST" duration-ms="3846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenProduct -->
-        <test-method signature="testAddToCart()[pri:5, instance:ebay.EbayTest@13e39c73]" started-at="2026-04-14T13:43:40 IST" name="testAddToCart" finished-at="2026-04-14T13:44:00 IST" duration-ms="20107" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id="atcBtn_btn_1"] (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id="atcBtn_btn_1"] (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at ebay.EbaySearchPage.clickAddToCartButton(EbaySearchPage.java:107)
-at ebay.EbayTest.testAddToCart(EbayTest.java:103)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="atcBtn_btn_1"]"}
-  (Session info: chrome=147.0.7727.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.3.1', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7a25c84596711a153a07800395ec8dfe, findElement {using=xpath, value=//*[@id="atcBtn_btn_1"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /var/folders/m4/pfs_t86j641...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62372}, goog:processID: 33682, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62372/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7a25c84596711a153a07800395ec8dfe
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 32 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="testAddToCart()[pri:5, instance:ebay.EbayTest@64cd705f]" started-at="2026-04-14T14:35:53 IST" name="testAddToCart" finished-at="2026-04-14T14:36:00 IST" duration-ms="7633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ebay.EbayTest@13e39c73]" started-at="2026-04-14T13:44:00 IST" name="tearDown" finished-at="2026-04-14T13:44:00 IST" duration-ms="137" status="PASS">
+        <test-method signature="testCheckout()[pri:6, instance:ebay.EbayTest@64cd705f]" started-at="2026-04-14T14:36:00 IST" name="testCheckout" finished-at="2026-04-14T14:36:02 IST" duration-ms="2061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ebay.EbayTest@64cd705f]" started-at="2026-04-14T14:36:02 IST" name="tearDown" finished-at="2026-04-14T14:36:03 IST" duration-ms="145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

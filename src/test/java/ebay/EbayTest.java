@@ -96,18 +96,36 @@ public class EbayTest {
         System.out.println("✔ T4 PASSED — Product page loaded.");
     }
 
-    // ─── Test 5: Click Buy It Now ─────────────────────────────────────
+    // ─── Test 5: Add to Cart → See in Cart ───────────────────────────
 
     @Test(priority = 5)
     public void testAddToCart() throws InterruptedException {
-        searchPage.clickAddToCartButton();
-        Thread.sleep(1000);
+        searchPage.clickAddToCart();
+        Thread.sleep(2000);
+
+        searchPage.reloadAndClickSeeCart();
+        Thread.sleep(2000);
 
         String url = driver.getCurrentUrl();
         Assert.assertTrue(
-            url.contains("signin") || url.contains("checkout") || url.contains("cart"),
-            "Buy It Now did not navigate to sign-in/checkout. URL: " + url
+            url.contains("cart"),
+            "Did not navigate to cart page. URL: " + url
         );
-        System.out.println("✔ T5 PASSED — Buy It Now clicked. URL: " + url);
+        System.out.println("✔ T5 PASSED — Item added to cart and cart page loaded. URL: " + url);
+    }
+
+    // ─── Test 6: Checkout ─────────────────────────────────────────────
+
+    @Test(priority = 6)
+    public void testCheckout() throws InterruptedException {
+        searchPage.clickCheckout();
+        Thread.sleep(2000);
+
+        String url = driver.getCurrentUrl();
+        Assert.assertTrue(
+            url.contains("payments") || url.contains("checkout"),
+            "Did not navigate to checkout/signin. URL: " + url
+        );
+        System.out.println("✔ T6 PASSED — Checkout clicked. URL: " + url);
     }
 }

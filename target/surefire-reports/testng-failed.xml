@@ -5,8 +5,9 @@
     <classes>
       <class name="ebay.EbayTest">
         <methods>
-          <include name="tearDown"/>
           <include name="testAddToCart"/>
+          <include name="tearDown"/>
+          <include name="testCheckout"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- ebay.EbayTest -->
